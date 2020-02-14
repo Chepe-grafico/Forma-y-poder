@@ -1,0 +1,21 @@
+languageCode = "en-us"
+title = "Forma y poder"
+baseURL = "https://www.formaypoder.mx/"
+theme = "hugo-theme-dopetrope"
+
+[params]
+    logo = "/images/logo.png"
+
+[params.portfolio]
+    title = "Local"
+    foldername = "local"
+    findoutmoretext = "Leer mas"
+
+[params.blog]
+    title = "Nacional"
+    viewalltext = "Ver todas"
+    foldername = "blog"
+
+[params.settings]
+    googleanalytics = ""
+    disqus = "formaypoder"

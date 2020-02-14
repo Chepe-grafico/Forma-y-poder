@@ -1,0 +1,6 @@
+<!-- Logo -->
+{{ if isset .Site.Params "logo" }}
+<a href="{{ .Site.BaseURL }}"><img class="top-logo" src="{{ .Site.Params.logo }}" alt="logo image"></a>
+{{ else }}
+<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+{{ end }}

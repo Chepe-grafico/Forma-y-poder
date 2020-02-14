@@ -1,0 +1,33 @@
+<!-- Portfolio -->
+<section id="local">
+    <header class="major">
+        <h2>{{ .Site.Params.Portfolio.title }}</h2>
+    </header>
+    <div class="row">
+        <div class="sizer 4u 12u(mobile)">
+            <a href="http://www.pueblacapital.gob.mx/predial "><img src="/predial.jpg" alt=""></a>
+        </div>
+        {{ range first 5 .Site.Taxonomies.categories.local }}
+
+        <div class="sizer 4u 12u(mobile)">
+            <section class="box">
+                <a href="{{ .Permalink }}" class="image featured"><img
+                        src="/uploads/{{ .PublishDate.Format "2006/01" }}/{{ .Params.featured }}" alt="" /></a>
+                <header>
+                    <h3>{{ .Title }}</h3>
+                </header>
+                <p>{{ .Description }}</p>
+                <footer>
+                    <a href="{{ .Permalink }}" class="button alt">{{ .Site.Params.Portfolio.findoutmoretext }}</a>
+                </footer>
+            </section>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<style>
+    .sizer {
+        height: 54vh !important;
+    }
+</style>

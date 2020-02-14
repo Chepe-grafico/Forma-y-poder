@@ -1,0 +1,37 @@
+#banner img, #banner2 img{
+    width: 33.33vw;
+}
+
+#nav{
+    margin-bottom: 1rem;
+}
+
+.st-logo{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: none;
+    align-items: flex-end;
+    background: #fff;
+}
+
+.st-logo img{
+    height: 6rem;
+}
+
+@media screen and (max-width: 736px){
+    #banner img, #banner2 img{
+        width: 100vw;
+    }
+    .st-logo{
+        align-content: center;
+    }
+    .st-logo #nav{
+        display: none;
+    }
+    .st-logo > div{
+        margin: 0 auto;
+    }
+}

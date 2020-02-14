@@ -1,0 +1,14 @@
+position: "right"
+
+sections:
+- image: "images/facebook.jpg"
+  imagelink: "https://www.facebook.com/FormaiPoder/"
+  title: "Siguenos en Facebook para actualizaciones..."
+  description: "Mas texto aqui?"
+  buttonlink: "https://www.facebook.com/FormaiPoder/"
+  buttontext: "Facebook"
+
+- title: "Otros Links"
+  description: "Mas Texto aqui?"
+  buttonlink: "#"
+  buttontext: "Ipsum consequat"

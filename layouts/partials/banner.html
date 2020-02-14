@@ -1,0 +1,48 @@
+<!-- Banner -->
+<section id="banner">
+    <div><img src="/images/PortadaBarbosa.jpg" alt=""></div>
+    <div><img src="/images/ColumnaPepeTratado.jpg" alt=""></div>
+    <div><img src="/images/PortadaCardenas.jpg" alt=""></div>
+    <div><img src="/images/PortadaCuerpos.jpg" alt=""></div>
+    <!-- <header>
+        {{ with .Site.Data.home.banner }}
+        <h2>{{ .line1 }}</h2>
+        <p>{{ .line2 }}</p>
+        {{ end }}
+    </header> -->
+</section>
+
+<script>
+    $('#banner').slick({
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                pauseOnFocus: false,
+                pauseOnHover: false
+            }
+        }]
+    });
+
+
+    let menu = document.querySelector('.st-logo');
+    let header = document.querySelector('.top-logo');
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        if (entries[0].isIntersecting) {
+            console.log('dogo: ', $('st-logo'));
+            $('.st-logo').css('display', 'none');
+        } else {
+            console.log('cato');
+            $('.st-logo').css('display', 'flex');
+        }
+    });
+    observer.observe(header);
+
+</script>

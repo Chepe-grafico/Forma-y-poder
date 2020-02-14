@@ -1,0 +1,15 @@
+sections:
+- title: 'Ediciones recientes'
+
+- title: "Quiénes somos?"
+  imagelink: '#'
+  imageurl: "images/logo.jpg"
+  description: "descripcion aqui?!"
+  buttonlink: "#"
+  buttontext: "Contactanos"
+
+- title: 'Liniks 1'
+
+- title: 'Links 2'
+
+- title: 'Redes Sociales'
